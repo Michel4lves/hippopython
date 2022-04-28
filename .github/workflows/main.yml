@@ -2,9 +2,9 @@ name: hippopython-CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
   workflow_dispatch:
 
@@ -25,7 +25,6 @@ jobs:
       run: |
         python -q -m pip install --upgrade pip
         pip install -q -r requirements-dev.txt
-        cp contrib/env-sample .env
 
     - name: Lint with flake8
       run: |
