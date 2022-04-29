@@ -1,3 +1,5 @@
+-r requirements.txt
+
 flake8==4.0.1
 # flake8 deps
 mccabe==0.6.1 # Collecting mccabe<0.7.0,>=0.6.0
