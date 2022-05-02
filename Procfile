@@ -1,1 +1,1 @@
-web: gunicorn hippo.wsgi --log-file -
+web: gunicorn hippopython.wsgi --log-file -
