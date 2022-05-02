@@ -25,6 +25,7 @@ jobs:
       run: |
         python -q -m pip install --upgrade pip
         pip install -q -r requirements-dev.txt
+        cp contrib/env-sample .env 
 
     - name: Lint with flake8
       run: |
