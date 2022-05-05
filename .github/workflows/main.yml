@@ -12,6 +12,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres:13.6
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: testdb
+        ports: ['5432:5432']
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10.2
