@@ -23,3 +23,6 @@ s3transfer==0.5.2
 six==1.16.0
 urllib3==1.26.9
 
+collectfast==2.2.0
+# collectfast deps
+typing-extensions==4.2.0
