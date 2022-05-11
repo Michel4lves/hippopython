@@ -12,3 +12,8 @@ Link para o curso: [Dev Pro](https://plataforma.dev.pro.br/)
 [![Updates](https://pyup.io/repos/github/Michel4lves/hippopython/shield.svg)](https://pyup.io/repos/github/Michel4lves/hippopython/)
 [![codecov](https://codecov.io/gh/Michel4lves/hippopython/branch/main/graph/badge.svg?token=oPaHj2OfZR)](https://codecov.io/gh/Michel4lves/hippopython)
 
+Para instalar dependências:
+
+    python -m pip install --upgrade pip
+    pip install -r requirements-dev.txt
+
