@@ -79,6 +79,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'hippopython.wsgi.application'
 
 
+# Configuração Djando Debug Tollbar
+
+INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
+
+if DEBUG:
+    INSTALLED_APPS.append('debug_toolbar')
+    MIDDLEWARE.insert(0, "debug_toolbar.middleware.DebugToolbarMiddleware")
+
+
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
