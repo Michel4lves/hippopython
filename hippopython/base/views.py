@@ -5,4 +5,4 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('Este site está em fase inicial de construção')
+    return HttpResponse('<html><body>Este site está em fase inicial de construção</body></html>')
