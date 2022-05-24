@@ -21,7 +21,7 @@
     <script src="{% static 'js/scripts.js' %}"></script>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<nav class="navbar navbar-expend-lg navbar-dark bg-primary">
@@ -58,5 +58,28 @@
 			</div>
 		</div>
 	</div>
+  	<footer class="main-footer mt-5 pt-4 text-light">
+	   <div class="container">
+		  <div class="row">
+			 <div class="col">
+				<h3>Entre em contato</h3>
+				<address>
+				   +55 53 991-199-840
+				   <br/>
+				   <a href="mailto: michel4alves.python@gmail.com" class="text-light">michel4alves.python@gmail.com</a>
+				</address>
+			 </div>
+		  </div>
+	   </div>
+		<div class="rights pt-2 pb-2">
+		   <div class="container">
+			  <div class="row">
+				 <div class="col">
+					{% now 'Y' %} hippo. Todos direitos reservados.
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	</footer>
   </body>
 </html>
