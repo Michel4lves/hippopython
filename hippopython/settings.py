@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'collectfast',
     'django.contrib.staticfiles',
     'hippopython.base',
+    'hippopython.aperitivos',
 ]
 
 MIDDLEWARE = [

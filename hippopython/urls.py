@@ -20,6 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('hippopython.base.urls')),
+    path('aperitivos/', include('hippopython.aperitivos.urls')),
 ]
 
 if settings.DEBUG:
