@@ -21,7 +21,7 @@
     <script src="{% static 'js/scripts.js' %}"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
 				<nav class="navbar navbar-expend-lg navbar-dark bg-primary">
@@ -29,16 +29,50 @@
 						<a class="navbar-brand" href="{% url 'base:home' %}">hippopython</a>
 				    </div>
 				</nav>
-				<div class="jumbotron card card-block">
-					<h2>
+			</div>
+		</div>
+	</div>
+    <div class="container pt-4">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<h3 class="card-header">
 						Curso de django com professor Hippo
-					</h2>
-					<p>
-						Confira em breve mais informações sobre o curso!!!!!
-					</p>
+					</h3>
+					<div class="card-body">
+						<p>
+							Cadastre-se na nossa lista de espera!!!!!
+						</p>
+						<form action="https://hippopython.us14.list-manage.com/subscribe/post?u=cad97d507be5cee93ee33a63f&amp;id=168c7c7fd7"
+							  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+							  class="form-row align-items-center" target="_blank" novalidate>
+							<div class="indicates-required text-danger text-end fst-italic"><span class="asterisk text-danger">*</span>campo obrigatório</div>
+							<div class="form-row align-items-center">
+								<div class="col-auto float-start me-3">
+									<label class="sr-only" for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+									<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="exemplo@email.com">
+								</div>
+								<div class="col-auto float-start me-3">
+									<label class="sr-only" for="mce-FNAME">First Name</label>
+									<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Seu Nome">
+								</div>
+								<div class="col-auto float-start me-3">
+									<label class="sr-only" for="mce-PHONE">Phone Number</label>
+									<input type="text" value="" name="PHONE" class="form-control" id="mce-PHONE" placeholder="Seu número de telefone">
+								</div>
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cad97d507be5cee93ee33a63f_168c7c7fd7" tabindex="-1" value=""></div>
+							<div class="col-auto pt-4">
+								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+							</div>
+						  </div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+    <div class="container pt-4">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="card">
@@ -49,7 +83,7 @@
 						<p class="card-text">
 							<img src="{% static 'img/hippo.png' %}" alt="Foto do professor Hippo" class="img-thumbnail float-start me-3" />
 							Hippo é um professor criado para ilustrar esse projeto construído durante o curso de django na plataforma
-							<a href="https://www.python.pro.br">Python Pro</a> e código disponível no repositório do autor:
+							<a href="https://plataforma.dev.pro.br/">Python Pro</a> e código disponível no repositório do autor:
 							<a href=" https://github.com/Michel4lves">Michel4lves</a>.
 							Este site tem por finalidade demonstrar as atribuições do autor adquiridas durante o curso, usando a linguagem Python.
 						</p>
