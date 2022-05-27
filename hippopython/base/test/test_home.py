@@ -16,7 +16,7 @@ def test_status_code(resposta):
 
 
 def test_title(resposta):
-    assert_contains(resposta, '<title>hippopython - Curso Django</title>')
+    assert_contains(resposta, '<title>hippopython - home</title>')
 
 
 def test_home_link(resposta):
