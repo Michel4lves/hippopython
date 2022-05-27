@@ -1,5 +1,4 @@
 import pytest
-from django.test import Client
 from django.urls import reverse
 
 from hippopython.django_assertions import assert_contains

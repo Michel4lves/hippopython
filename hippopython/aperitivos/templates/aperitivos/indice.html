@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}hippopython - Índice{% endblock title %}
+
+{% block description %}Índice de aperitivo do curso de python{% endblock description %}
+
+{% block body %}
+    <div class="container pt-4">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<h3 class="card-header">Vídeos Aperitivos - Índice</h3>
+					<div class="card-body">
+						<p class="card-text">
+							<ol>
+								{% for video in videos %}
+								<li>{{ video.titulo | default:"Faltando Título" }}</li>
+								{% endfor %}
+							</ol>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock body %}
