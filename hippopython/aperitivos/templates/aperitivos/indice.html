@@ -1,4 +1,4 @@
-{% extends 'base/base.html' %}
+ {% extends 'base/base.html' %}
 {% load static %}
 
 {% block title %}hippopython - Índice{% endblock title %}
@@ -15,7 +15,9 @@
 						<p class="card-text">
 							<ol>
 								{% for video in videos %}
-								<li>{{ video.titulo | default:"Faltando Título" }}</li>
+								<li><a href="{{ video.get_absolute_url }}">{{ video.titulo | default:"Faltando Título" }}</a></li>
+								{% empty %}
+								<li>Não foi encontrado nenhum vídeo de aperitivo</li>
 								{% endfor %}
 							</ol>
 						</p>

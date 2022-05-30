@@ -38,29 +38,7 @@
 
 	{% block body %}{% endblock body %}
 
-  	<footer class="main-footer mt-5 pt-4 text-light">
-	   <div class="container">
-		  <div class="row">
-			 <div class="col">
-				<h3>Entre em contato</h3>
-				<address>
-				   +55 53 991-199-848
-				   <br/>
-				   <a href="mailto: michel4alves.python@gmail.com" class="text-light">michel4alves.python@gmail.com</a>
-				</address>
-			 </div>
-		  </div>
-	   </div>
-		<div class="rights pt-2 pb-2">
-		   <div class="container">
-			  <div class="row">
-				 <div class="col">
-					{% now 'Y' %} hippo. Todos direitos reservados.
-				 </div>
-			  </div>
-		   </div>
-		</div>
-	</footer>
+    {% include 'base/footer.html' with contato_email='michel4alves.python@gmail.com' only %}
 
   </body>
 

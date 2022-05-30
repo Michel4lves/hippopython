@@ -20,3 +20,7 @@ def test_title(resposta):
 
 def test_home_link(resposta):
     assert_contains(resposta, f'href="{reverse("base:home")}">hippopython</a>')
+
+
+def test_email_link(resposta):
+    assert_contains(resposta, f'href="mailto: michel4alves.python@gmail.com"')

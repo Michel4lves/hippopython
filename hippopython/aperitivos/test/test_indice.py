@@ -17,14 +17,20 @@ def test_status_code(resp):
     'titulo',
     [
         'Vídeo Aperitivo: Motivação',
-        'Vídeo Instalação: Windows',
+        'Vídeo Instalação: Windows'
     ]
 )
 def test_titulos_videos(resp, titulo):
     assert_contains(resp, titulo)
 
 
-# def test_video(resp):
-#     assert_contains(resp, '<iframe src="https://player.vimeo.com/video/700105282?h=9948754776&amp;'
-#                           'badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"'
-#                     )
+@pytest.mark.parametrize(
+    'slug',
+    [
+        'motivacao',
+        'instalacao-windows'
+    ]
+)
+def test_link_videos(resp, slug):
+    video_link = reverse('aperitivos:video', args=(slug,))
+    assert_contains(resp, f'href="{video_link}"')
