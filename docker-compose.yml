@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  database:
+    container_name: hippopython_database
+    image: postgres
+    restart: always
+    volumes:
+      - ./.pgdata:/var/lib/postgresql/data
+    environment:
+      - LC_ALL=C.UTF-8
+      - POSTGRES_PASSWORD=hippopython
+      - POSTGRES_USER=hippopython
+      - POSTGRES_DB=hippopython_DB
+    ports:
+      - 5434:5432
