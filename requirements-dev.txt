@@ -21,6 +21,6 @@ tomli==2.0.1
 
 pytest-cov==3.0.0
 # pytest-cov deps
-coverage==6.4
+coverage==6.4.1
 
 model_mommy==2.0.0

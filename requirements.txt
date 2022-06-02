@@ -1,4 +1,4 @@
-django==4.0.4
+django==4.0.5
 # django deps
 asgiref==3.5.2
 sqlparse==0.4.2
@@ -14,12 +14,12 @@ psycopg2-binary==2.9.3
 
 django-s3-folder-storage==0.5
 # django-s3-folder-storage deps
-boto3==1.23.9
-botocore==1.26.9
+boto3==1.24.1
+botocore==1.27.1
 django-storages==1.12.3
 jmespath==1.0.0
 python-dateutil==2.8.2
-s3transfer==0.5.2
+s3transfer==0.6.0
 six==1.16.0
 urllib3==1.26.9
 
