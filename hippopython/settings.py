@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hippopython.base',
     'hippopython.aperitivos',
+    'hippopython.modulos',
 ]
 
 MIDDLEWARE = [
