@@ -5,7 +5,7 @@ from hippopython.django_assertions import assert_contains
 
 
 @pytest.fixture
-def resposta(client):
+def resposta(client, db):
     resp = client.get(reverse('base:home'))
     return resp
 

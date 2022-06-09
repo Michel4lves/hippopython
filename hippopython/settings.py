@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hippopython.base',
     'hippopython.aperitivos',
+    'hippopython.modulos',
+    'ordered_model',
 ]
 
 MIDDLEWARE = [
@@ -76,6 +78,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'hippopython.modulos.context_processors.listar_modulos',
             ],
         },
     },
