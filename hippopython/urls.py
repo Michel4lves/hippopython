@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('hippopython.base.urls')),
     path('aperitivos/', include('hippopython.aperitivos.urls')),
+    path('modulos/', include('hippopython.modulos.urls')),
 ]
 
 if settings.DEBUG:
