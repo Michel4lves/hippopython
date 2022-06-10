@@ -30,7 +30,7 @@
 						<p class="card-text">
 							<ol>
 								{% for aula in aulas %}
-									<li>{{ aula.titulo }}</li>
+									<li><a href="{{aula.get_absolute_url}}">{{ aula.titulo }}</a></li>
 								{% endfor %}
 							</ol>
 						</p>
