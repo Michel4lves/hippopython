@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}hippopython - {{ modulo.titulo }}{% endblock title %}
+
+{% block description %}Página com detalhes do modulo {{ modulo.titulo }} do curso de python{% endblock description %}
+
+{% block body %}
+    <div class="container pt-4">
+		<div class="row">
+			{% for modulo in modulos %}
+			<div class="col-md-4">
+				<div class="card">
+					<h3 class="card-header">{{ modulo.titulo }}</h3>
+					<div class="card-body">
+						<p class="card-text">
+							<dl>
+								<dt>Público:</dt>
+								<dd>{{ modulo.publico }}</dd>
+								<dt>Descrição:</dt>
+								<dd>{{ modulo.descricao }}</dd>
+							</dl>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="card">
+					<h3 class="card-header">Aulas</h3>
+					<div class="card-body">
+						<p class="card-text">
+							<ol>
+								{% for aula in modulo.aulas %}
+									<li><a href="{{aula.get_absolute_url}}">{{ aula.titulo }}</a></li>
+								{% endfor %}
+							</ol>
+						</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock body %}
