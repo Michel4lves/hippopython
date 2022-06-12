@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'hippopython.aperitivos',
     'hippopython.modulos',
     'ordered_model',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

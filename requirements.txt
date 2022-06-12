@@ -14,8 +14,8 @@ psycopg2-binary==2.9.3
 
 django-s3-folder-storage==0.5
 # django-s3-folder-storage deps
-boto3==1.24.2
-botocore==1.27.2
+boto3==1.24.7
+botocore==1.27.7
 django-storages==1.12.3
 jmespath==1.0.0
 python-dateutil==2.8.2
