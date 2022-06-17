@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'hippopython.modulos',
     'ordered_model',
     # 'django_extensions',
+    'hippopython.turmas',
 ]
 
 MIDDLEWARE = [
