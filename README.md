@@ -1,5 +1,6 @@
-# hippopython
-Plataforma exemplo criada durante o curso de Django. 
+**<span style="color:blue; font-size:3em;">hippopython</span>**
+
+Plataforma web criada como exemplo durante o curso de <span style="color:green; font-size:2em;">Django</span>. 
 
 Link para o curso: [Dev Pro](https://plataforma.dev.pro.br/)
 
