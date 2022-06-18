@@ -19,6 +19,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('contas/', include('django.contrib.auth.urls')),
     path('', include('hippopython.base.urls')),
     path('aperitivos/', include('hippopython.aperitivos.urls')),
     path('modulos/', include('hippopython.modulos.urls')),
