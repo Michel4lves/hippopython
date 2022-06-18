@@ -46,6 +46,9 @@ LOGOUT_REDIRECT_URL = '/'
 # Application definition
 
 INSTALLED_APPS = [
+    'hippopython.base',
+    'hippopython.aperitivos',
+    'hippopython.modulos',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -53,9 +56,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'collectfast',
     'django.contrib.staticfiles',
-    'hippopython.base',
-    'hippopython.aperitivos',
-    'hippopython.modulos',
     'ordered_model',
     # 'django_extensions',
     'hippopython.turmas',
@@ -91,6 +91,16 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'hippopython.wsgi.application'
+
+
+# Configurações de envio de Email
+
+EMAIL_BACKEND = config('EMAIL_BACKEND')
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = config('EMAIL_USE_TLS')
 
 
 # Configuração Djando Debug Tollbar
